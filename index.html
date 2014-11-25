@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Toolbox Challenge</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body>
+
+    	<div id="heading">
+    		<h1><div id="gametitle">Memory Game</div></h1>
+
+                <!--toggle popover-->
+               <a href="#" tabindex="0" id="instructions" role="button" class="btn btn-info btn-lg" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Instructions:
+               Click on a tile, click on another tile Click on a tile to turn it over and reveal an image. Then select a second tile, trying to find the matching image. If the images match, the tiles are faced up. Try to see how few turns you need to remove all of the tiles and how fast you can do it."> How to Play</a>
+
+               <!--start button-->
+              <button type="button" class= "btn btn-primary btn-lg" id="start-game">Start Game</button>
+    	</div>
+
+        <div id="statistics">
+            <p id="elapsed-seconds"></p>
+            <p id="numMatches"></p>
+            <p id="remainingPairs"></p>
+            <p id="numFailed"></p>
+        </div>
+
+	     <div id="memory_board">
+	     </div>
+
+         <!--win pop up-->
+         <div id="overlay">
+         <div>
+              <p><strong>Congratulations, you win!!</strong></p>
+              <!--restart button -->
+              <button type="button" class="btn btn-success btn-lg" id="restart">Play Again!</button>
+         </div>
+         </div>
+     
+
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
